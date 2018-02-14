@@ -9,16 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        print("hello world")
+    @IBOutlet var cardButtons: [UIButton]!
+    var flipCount:Int = 0
+    
+    @IBAction func cardTouchAction(_ sender: UIButton) {
     }
-    func sayHelloToWorld(){
-        print("hello world")
+    func flipCard(){
+        flipCount += 1
     }
-
-
 }
 
