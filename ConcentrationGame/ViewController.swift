@@ -10,7 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet var cardButtons: [UIButton]!
-    var flipCount:Int = 0
+    var flipCount:Int = 0{
+        didSet{
+            flipCountDisplay.text = "flipcount:" + self
+        }
+    }
+    
     @IBOutlet weak var flipCountDisplay: UILabel!
     var emojies = ["🎃","👻","🎃","👻"]
     @IBAction func cardTouchAction(_ sender: UIButton) {
