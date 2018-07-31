@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet var cardButtons: [UIButton]!
     var flipCount:Int = 0{
         didSet{
-            flipCountDisplay.text = "flipcount:" + self
+            flipCountDisplay.text = "flipcount:" + String(self.flipCount)
         }
     }
     
