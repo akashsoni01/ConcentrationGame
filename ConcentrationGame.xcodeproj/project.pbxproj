@@ -12,6 +12,8 @@
 		12A1ED4A203442570030E63B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A1ED48203442570030E63B /* Main.storyboard */; };
 		12A1ED4C203442570030E63B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12A1ED4B203442570030E63B /* Assets.xcassets */; };
 		12A1ED4F203442570030E63B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A1ED4D203442570030E63B /* LaunchScreen.storyboard */; };
+		FF43D31B211041E500F5B275 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF43D31A211041E400F5B275 /* Concentration.swift */; };
+		FF43D31D211042AB00F5B275 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF43D31C211042AB00F5B275 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		12A1ED4B203442570030E63B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12A1ED4E203442570030E63B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12A1ED50203442570030E63B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF43D31A211041E400F5B275 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
+		FF43D31C211042AB00F5B275 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				12A1ED44203442570030E63B /* AppDelegate.swift */,
 				12A1ED46203442570030E63B /* ViewController.swift */,
+				FF43D31A211041E400F5B275 /* Concentration.swift */,
+				FF43D31C211042AB00F5B275 /* Card.swift */,
 				12A1ED48203442570030E63B /* Main.storyboard */,
 				12A1ED4B203442570030E63B /* Assets.xcassets */,
 				12A1ED4D203442570030E63B /* LaunchScreen.storyboard */,
@@ -138,6 +144,8 @@
 			files = (
 				12A1ED47203442570030E63B /* ViewController.swift in Sources */,
 				12A1ED45203442570030E63B /* AppDelegate.swift in Sources */,
+				FF43D31B211041E500F5B275 /* Concentration.swift in Sources */,
+				FF43D31D211042AB00F5B275 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
