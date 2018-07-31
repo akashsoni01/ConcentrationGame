@@ -14,7 +14,7 @@ class ViewController: UIViewController {
 
     var flipCount:Int = 0{
         didSet{
-            flipCountDisplay.text = "flipcount:" + String(self.flipCount)
+            flipCountDisplay.text = "Flip Count:" + String(self.flipCount)
         }
     }
     
@@ -44,8 +44,14 @@ class ViewController: UIViewController {
         }
         
     }
+    var emojiChoices = ["🦇", "😱", "🙀", "😈", "🎃", "👻", "🍭", "🍬", "🍎"]
+    var emoji = Dictionary<Int,String>()
     func emoji(for card:Card) -> String{
-        return "?"
+        if emoji[card.identifire] == nil , emojiChoices.count > 0{
+            let randomIndex = Int(arc4random_uniform(UInt32(emojiChoices.count)))
+            emoji[card.identifire] = emojiChoices.remove(at: randomIndex)
+        }
+        return emoji[card.identifire] ?? "?"
     }
 }
 
