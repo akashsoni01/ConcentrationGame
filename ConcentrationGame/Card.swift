@@ -10,14 +10,14 @@ import Foundation
 struct Card {
     var isFaceUp = false
     var isMatched = false
-    var identifire:Int
+    var identifier:Int
     static var uniqueId = 0
     static func identifireFectory() -> Int {
         uniqueId = uniqueId + 1
         return uniqueId
     }
     init() {
-        self.identifire = Card.identifireFectory()
+        self.identifier = Card.identifireFectory()
     }
     
 }
