@@ -45,7 +45,6 @@ class Concentration{
                     cards[index].isMatched = true
                 }
                 cards[index].isFaceUp = true
-                indexOfOneAndOnlyFaceUpCard = nil    // not one and only ...
             } else {
                 // either no card or two cards face up
                 indexOfOneAndOnlyFaceUpCard = index
