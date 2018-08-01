@@ -11,8 +11,8 @@ struct Card {
     var isFaceUp = false
     var isMatched = false
     var identifier:Int
-    static var uniqueId = 0
-    static func identifireFectory() -> Int {
+    private static var uniqueId = 0
+    private static func identifireFectory() -> Int {
         uniqueId = uniqueId + 1
         return uniqueId
     }

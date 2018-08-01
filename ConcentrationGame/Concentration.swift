@@ -8,8 +8,27 @@
 
 import Foundation
 class Concentration{
-    var cards:[Card] = Array<Card>()
-    var indexOfOneAndOnlyFaceUpCard:Int!
+    private(set) var cards:[Card] = Array<Card>()
+    private var indexOfOneAndOnlyFaceUpCard:Int!{
+        get{
+            var foundIndex:Int?
+            for index in cards.indices{
+                if cards[index].isFaceUp{
+                    if foundIndex == nil{
+                        foundIndex = index
+                    }else{
+                        return nil
+                    }
+                }
+            }
+            return foundIndex
+        }
+        set{
+            for index in cards.indices{
+                cards[index].isFaceUp = (index == newValue)
+            }
+        }
+    }
     
     init(withPairOfCard pair:Int){
         for _ in 1...pair{
@@ -29,10 +48,6 @@ class Concentration{
                 indexOfOneAndOnlyFaceUpCard = nil    // not one and only ...
             } else {
                 // either no card or two cards face up
-                for flipdownIndex in cards.indices {
-                    cards[flipdownIndex].isFaceUp = false
-                }
-                cards[index].isFaceUp = true
                 indexOfOneAndOnlyFaceUpCard = index
             }
             
